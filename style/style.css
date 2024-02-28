@@ -1,9 +1,9 @@
 body {
-    background-color :black;
+    background-color :crimson;
     
 }
 
 body h1,
 body h2  {
-    color: red;
+    color: white;
 }
