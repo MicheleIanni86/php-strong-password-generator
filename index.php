@@ -1,5 +1,6 @@
 <?php 
-
+ $password_length = (int) $_GET['input-length'];
+ var_dump( $password_length);
 ?>
 
 
@@ -17,9 +18,10 @@
     <div class="container justify-content-center text-center mt-5">
         <h1 class="display-5 fw-bold">PASSWORD GENERATOR</h1>
         <h2>Inserisci qui sotto la lunghezza della password che vuoi generare!</h2>
-        <form action="" class="mt-4">
-            <label for="" class="text-white me-4" >Lunghezza password: </label>
-            <input type="text">
+        <form action="" method="GET" class="container d-flex justify-content-center align-items-center mt-4 gap-5">
+            <label for="input-length" class="text-white" >Scrivi la lunghezza della password: </label>
+            <input type="number" name="input-length" id="input-length">
+            <button type="submit" class="btn btn-warning">Genera Password!</button>
         </form>
     </div>
 </body>
