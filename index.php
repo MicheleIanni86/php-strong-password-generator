@@ -1,6 +1,21 @@
 <?php 
- $password_length = (int) $_GET['input-length'];
- var_dump( $password_length);
+ 
+
+  $password_length = (int) $_GET['input-length'];
+  var_dump($password_length);
+
+
+
+ $array_big = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
+ $array_small = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
+ $array_numbers = array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+ $array_symbols = array('!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=', '{', '}', '[', ']', '|', ':', ';', '"', '\'', '<', '>', ',', '.', '?', '/');
+
+ $random_big = array_rand($array_big); 
+ $random_small = array_rand($array_small);
+ $random_numbers = array_rand($array_numbers);
+ $random_symbols = array_rand($array_symbols);
+ var_dump( $array_big[$random_big],  $array_small[$random_small], $random_numbers, $array_symbols[$random_symbols]);
 ?>
 
 
@@ -9,7 +24,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Password Generator</title>
     <!-- BOOTSTRAP CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
