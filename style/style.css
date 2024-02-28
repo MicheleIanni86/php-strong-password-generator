@@ -1,0 +1,9 @@
+body {
+    background-color: brown;
+    
+}
+
+body h1,
+body h2  {
+    color: white;
+}
