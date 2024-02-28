@@ -1,11 +1,7 @@
 <?php
-include ("./partials/functions.php");
 
-
-$password_length = (int) $_GET['input-length'];
-
-//  risultato password finale
-$passfinale= random_password($password_length );
+require_once __DIR__ . "./partials/functions.php";
+require_once __DIR__ . "./partials/logic.php";
 ?>
 
 
@@ -29,7 +25,7 @@ $passfinale= random_password($password_length );
 
         <form action="" method="GET" class="container d-flex justify-content-center align-items-center mt-4 gap-5">
 
-            <label for="input-length" class="text-white" >Scrivi la lunghezza della password: </label>
+            <label for="input-length" class="text-white" >Scegli la lunghezza della password: </label>
             <input type="number" name="input-length" id="input-length">
             <button type="submit" class="btn btn-warning">Genera Password!</button>
 
