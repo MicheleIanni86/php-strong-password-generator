@@ -1,5 +1,4 @@
 <?php
-
 require_once __DIR__ . "./partials/functions.php";
 require_once __DIR__ . "./partials/logic.php";
 ?>
@@ -30,8 +29,11 @@ require_once __DIR__ . "./partials/logic.php";
             <button type="submit" class="btn btn-warning">Genera Password!</button>
 
         </form>
+        <div class="container mt-5 border rounded-5">
+            <p class="text-white fs-5">La password generata di <?= $password_length ?> caratteri è:</p>
+            <h2 class="fw-bold"><?= $passfinale ?></h2>
 
-       <?= $passfinale ?>
+        </div>
 
     </div>
 </body>

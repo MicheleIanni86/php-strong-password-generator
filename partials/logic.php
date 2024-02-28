@@ -1,5 +1,6 @@
 <?php
 
+
 $password_length = (int) $_GET['input-length'];
 
 //  risultato password finale
