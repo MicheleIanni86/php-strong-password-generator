@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . "./partials/functions.php";
-require_once __DIR__ . "./partials/logic.php";
+require_once __DIR__ . "/partials/functions.php";
+require_once __DIR__ . "/partials/logic.php";
 ?>
 
 
